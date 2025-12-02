@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Student Guidance Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h1>🎓 Student Guidance Chatbot</h1>
+            <p>Ask me anything about courses, career, study tips & more!</p>
+            <div class="header-buttons" id="headerButtons">
+                <!-- Dynamic buttons will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome Message -->
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hello! 👋 I'm your AI guidance assistant. I'm here to help you with:</p>
+                    <p>📚 Course recommendations<br>
+                    💼 Career guidance<br>
+                    📖 Study tips & techniques<br>
+                    🎯 Goal setting<br>
+                    🏛️ College information</p>
+                    <p>How can I assist you today?</p>
+                </div>
+            </div>
+
+            <!-- Suggestion Chips -->
+            <div class="suggestion-chips" id="suggestionChips">
+                <button class="chip" data-message="Tell me about computer science courses">
+                    📚 Course Info
+                </button>
+                <button class="chip" data-message="What career options are available for MCA students?">
+                    💼 Career Help
+                </button>
+                <button class="chip" data-message="Give me some effective study tips">
+                    📖 Study Tips
+                </button>
+                <button class="chip" data-message="How can I manage my time better as a student?">
+                    ⏰ Time Management
+                </button>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-container">
+            <form id="chatForm" class="chat-input-form">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="message-input" 
+                    placeholder="Type your message here..." 
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
